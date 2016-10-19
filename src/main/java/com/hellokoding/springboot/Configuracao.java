@@ -9,7 +9,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Configuracao  {
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(Configuracao.class, args);
+    	 
+    	//TODO deve tools not ok; must restart the app to apply changes
+    	
+    	System.setProperty("spring.devtools.restart.enabled", "true");
+    	SpringApplication.run(Configuracao.class, args);
     }
 }
 
