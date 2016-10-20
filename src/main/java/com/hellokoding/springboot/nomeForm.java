@@ -13,7 +13,6 @@ public class nomeForm {
 
 	@RequestMapping
 	public ModelAndView form(PersonForm personForm) {
-		//todo nao está pegando o bootstrap
 		ModelAndView pagina = new ModelAndView("form");
 		return pagina;
 	}
