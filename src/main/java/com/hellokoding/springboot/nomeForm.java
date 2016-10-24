@@ -8,13 +8,22 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 @Controller
-@RequestMapping(value = "/form")
+@RequestMapping("/form")
 public class nomeForm {
 
-	@RequestMapping
+	
+
 	public ModelAndView form(PersonForm personForm) {
 		ModelAndView pagina = new ModelAndView("form");
 		return pagina;
+	}
+
+	//TODO não carrega se estiver no caminho /form/about no /form ok!
+	@RequestMapping("/about")
+	public ModelAndView lista(ModelAndView usuarios) {
+		ModelAndView sobre = new ModelAndView("about");
+
+		return sobre;
 	}
 
 }

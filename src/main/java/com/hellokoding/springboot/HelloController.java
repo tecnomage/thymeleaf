@@ -37,10 +37,10 @@ public class HelloController {
 	}
 
 	// TODO implementar a listagem
-	@RequestMapping("/sobre")
+	@RequestMapping("/about")
 	public ModelAndView lista(ModelAndView usuarios) {
-		ModelAndView listaUser = new ModelAndView("sobre");
+		ModelAndView sobre = new ModelAndView("about");
 
-		return listaUser;
+		return sobre;
 	}
 }
