@@ -17,12 +17,14 @@ public class Configuracao  {
     	SpringApplication.run(Configuracao.class, args);
     }
     
-    @Bean
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/resources/**").addResourceLocations("classpath:/resources/*");
-    }
-    
-    
+//    @Bean
+//    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+//        registry.addResourceHandler("/css/**").addResourceLocations("/css/**");
+//        registry.addResourceHandler("/img/**").addResourceLocations("/img/**");
+//        registry.addResourceHandler("/js/**").addResourceLocations("/js/**");
+//        registry.addResourceHandler("/sound/**").addResourceLocations("/sound/**");
+//        registry.addResourceHandler("/fonts/**").addResourceLocations("/fonts/**");
+//    }   
     
 }
 
