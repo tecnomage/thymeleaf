@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/meds")
 public class HelloController {
 	@RequestMapping("/hello")
 	public ModelAndView hello(@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
+		
 		ModelAndView modelAndView = new ModelAndView("hello");
 		modelAndView.addObject("name", name);
 

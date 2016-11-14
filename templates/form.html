@@ -2,18 +2,15 @@
     <html lang="pt" xmlns:th="http://www.thymeleaf.org">
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-     <link th:href="@{css/bootstrap.min.css}" rel="stylesheet" />
-    
-    <title>3</title>
-    	
-    
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>pagina inicial</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     </head>
             <body>
             <div class="container">
             <div class="panel panel-default">
            <div class="panel-heading">
-             Trader Syzzzz
+             Trader Sys
             </div>
            <div class="panel-body">
             <form class="img-responsive" th:action="@{/hello}" th:object="${personForm}" method="post">
@@ -41,13 +38,11 @@
             </div>
             </div>
             </div>
-                
-               
-                 
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-           	    <script src="bootstrap/js/bootstrap.min.js"></script>
 
-               
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                <script src="bootstrap/js/bootstrap.min.js"></script>
+
             </body>
     </html>
 
